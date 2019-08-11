@@ -34,7 +34,6 @@ public class FrameworkVersion {
         this.name = name;
     }
 
-
     public Long getId() {
         return id;
     }

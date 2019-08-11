@@ -13,7 +13,6 @@ import org.springframework.stereotype.Component;
  *
  */
 
-public interface JavaScriptFrameworkRepository
-        extends CrudRepository<JavaScriptFramework, Long> {
+public interface JavaScriptFrameworkRepository extends CrudRepository<JavaScriptFramework, Long> {
 
 }

@@ -42,13 +42,11 @@ public class JavaScriptFramework {
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL) //What is it
     private List<FrameworkVersion> versions;
 
-
     @Column(nullable = true, length = 30)
     private String hypeLevel;
 
     @Column(nullable = true, length = 30)
     private LocalDate deprecationDate;
-
 
     public JavaScriptFramework() {
 
@@ -59,7 +57,6 @@ public class JavaScriptFramework {
         this.hypeLevel = hypeLevel;
         this.versions = new ArrayList<>();
         versions.add(new FrameworkVersion(version));
-
     }
 
     public JavaScriptFramework(String name) {

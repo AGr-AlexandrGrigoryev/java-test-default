@@ -81,7 +81,6 @@ public class JavaScriptFrameworkTests {
                 .andExpect(jsonPath("$.errors", hasSize(1)))
                 .andExpect(jsonPath("$.errors[0].field", is("name")))
                 .andExpect(jsonPath("$.errors[0].message", is("Size")));
-
     }
 
     @Test

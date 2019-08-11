@@ -46,7 +46,6 @@ public class JavaScriptFrameworkController extends EtnRestController {
         return ResponseEntity.ok(repository.save(framework));
     }
 
-
     @DeleteMapping("/delete")
     public ResponseEntity<?> deleteJavaScriptFramework(@RequestBody JavaScriptFramework framework) {
         repository.delete(framework);
